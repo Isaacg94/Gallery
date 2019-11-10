@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import Image
+from .models import Image, Location, Category, Editor
 
 # Create your views here.
 def gallery(request):
@@ -10,14 +10,15 @@ def gallery(request):
 
 
 def search_results(request):
-
+    categories = Category.objects.all()
+    locations = Location.objects.all()
     if 'image' in request.GET and request.GET["image"]:
         image_category = request.GET.get("image")
         searched_images = Image.search_by_category(image_category)
 
         message = f"{image_category}"
 
-        return render(request, 'search.html', {"message":message, "images": searched_images})
+        return render(request, 'search.html', {"message":message, "images": searched_images, 'categories': categories, "locations":locations})
 
     else:
         message = "You haven't searched for any term"
