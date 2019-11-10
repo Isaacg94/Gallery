@@ -8,3 +8,13 @@ class Editor(models.Model):
 
     def __str__(self):
         return self.editor_name
+
+    class Meta:
+        ordering = ['editor_name']
+
+class Category(models.Model):
+    name = models.CharField(max_length= 30)
+
+    def __str__(self):
+        return self.name
+
