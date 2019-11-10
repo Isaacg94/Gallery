@@ -35,6 +35,10 @@ class Image(models.Model):
     category = models.ForeignKey(Category)
     location = models.ForeignKey(Location)
 
+    def save_image(self):
+        self.save()
 
+    def delete_image(self):
+        self.delete()
 
 
