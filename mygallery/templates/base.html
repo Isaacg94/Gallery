@@ -1,4 +1,5 @@
 {% load bootstrap4 %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +15,7 @@
 
     {% block styles %}
     {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/basegallery.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -22,7 +24,10 @@
 
 <body>
 
-        {% include "navbar.html" %}
+    {% include "navbar.html" %}
+    {% block content %}
+    <h1>hello my G</h1>
+    {%endblock%}
 
 
 
