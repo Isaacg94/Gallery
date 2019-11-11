@@ -195,11 +195,18 @@ div.col-xs-6.col-sm-6.col-md-4.col-lg-3 {
 .portfolio-wrap {
   padding: 0 4px;
 }
+.footer {
+  margin-top: 5%;
+  background-color: #3E4551;
+  font-family: 'Heebo', sans-serif;
+}
 
 body {
   margin: 2rem;
   background-image: linear-gradient(330deg, rgb(0, 59, 95) 0%rgba(225rgb(225, 1, 255); 
 }
+
+
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
