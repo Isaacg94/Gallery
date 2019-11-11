@@ -9,7 +9,7 @@
     <div class="container header">
         <div class="logo">
             <img src="https://fontmeme.com/permalink/191110/b736c62394589483c15ed0b70f351136.png" alt="thrasher-font"
-                border="0" style="padding: 2%;">
+                border="0" style="padding: 2%;" class="img-fluid">
             <h2 style="font-family: 'Alegreya Sans SC', sans-serif; color: #fff;">Modern Aesthetics</h2>
         </div>
         <div class="form">
@@ -34,10 +34,10 @@
             <!-- search form end -->
         </div>
         <div class="trending-searches">
-            <p style="color: rgb(220, 215, 250); padding: 2px; font-size: smaller;">Trending Searches: Tropics, Drip</p>
+            <p style="color: rgb(215, 229, 250); padding: 2px; font-size: smaller;">Trending Searches: Tropics, Drip</p>
         </div>
     </div>
-    <div style="margin-top: 100px;">
+    <div style="margin-top: 140px;" class="container-fluid">
         {%for location in locations%}
         <a href="{%url 'location' location.id%}" class="btn btn-outline-info btn-sm rounded rounded-pill">{{location.location_name}}</a>
         {%endfor%}
