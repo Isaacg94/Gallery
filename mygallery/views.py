@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.shortcuts import render
 from .models import Image, Location, Category, Editor
 
@@ -23,3 +23,10 @@ def search_results(request):
     else:
         message = "You haven't searched for any term"
         return render(request, 'search.html', {"message":message})
+
+def singlepost(request,img_id):
+    try:
+        singlepost = Image.objects.get(id = img_id)
+    except DoesNotExist:
+        raise Http404()
+    return render (request,"singlepost.html", {"singlepost": singlepost})        
