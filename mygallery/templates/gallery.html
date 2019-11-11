@@ -36,7 +36,7 @@
     </div>
     <div style="margin-top: 100px;">
         {%for location in locations%}
-        <a href="{%url 'location' location.id%}" class="btn btn-outline-info btn-sm">{{location.location_name}}</a>
+        <a href="{%url 'location' location.id%}" class="btn btn-outline-info btn-sm rounded rounded-pill">{{location.location_name}}</a>
         {%endfor%}
 
     </div>
