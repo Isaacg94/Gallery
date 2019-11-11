@@ -48,7 +48,12 @@
   width: 60%;
   margin: 0 auto;
 }
-
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #333, #d7e5fa, #333);
+}
 .oops {
   text-align: center;
   width: 100%;

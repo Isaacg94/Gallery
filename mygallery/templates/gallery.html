@@ -34,12 +34,14 @@
             <!-- search form end -->
         </div>
         <div class="trending-searches">
-            <p style="color: rgb(215, 229, 250); padding: 2px; font-size: smaller;">Trending Searches: Tropics, Drip</p>
+            <p style="color: #d7e5fa; padding: 2px; font-size: smaller;">Trending Searches: Tropics, Drip</p>
         </div>
     </div>
-    <div style="margin-top: 140px;" class="container-fluid">
+    
+    <div style="margin-top: 120px;" class="container-fluid">
+        <hr class="style-one">
         {%for location in locations%}
-        <a href="{%url 'location' location.id%}" class="btn btn-outline-info btn-sm rounded rounded-pill">{{location.location_name}}</a>
+        <a href="{%url 'location' location.id%}" class="btn btn-outline-info btn-sm rounded rounded-pill" style="margin: 3px;">{{location.location_name}}</a>
         {%endfor%}
 
     </div>
