@@ -48,8 +48,8 @@ class Image(models.Model):
         return images
 
     @classmethod
-    def search_by_category(cls,image_category):
-        images = Image.objects.filter(image_category__name__icontains=image_category)
+    def search_by_category(cls,search):
+        images = Image.objects.filter(category__name__icontains=search)
         return images
 
 

@@ -6,7 +6,8 @@ from .models import Image, Location, Category, Editor
 # Create your views here.
 def gallery(request):
     images = Image.get_all_images()
-    return render(request, 'gallery.html', {"images":images})
+    locations = Location.objects.all()
+    return render(request, 'gallery.html', {"images":images, "locations":locations})
 
 
 def search_results(request):
@@ -22,7 +23,7 @@ def search_results(request):
 
     else:
         message = "You haven't searched for any term"
-        return render(request, 'search.html', {"message":message})
+        return render(request, 'search.html', {"message":message, "locations":locations})
 
 def singlepost(request,img_id):
     try:
@@ -33,7 +34,6 @@ def singlepost(request,img_id):
 
 def location_filter(request, location):
     locations = Location.objects.all()
-    image_location = Location.get_location_id(location)
-    images = Image.filter_by_location(location)
+    images = Image.objects.filter(location__id = location)
     title = f'{image_location} Photos'
-    return render(request, 'location.html', {'title':title, 'images':images, 'locations':locations, 'image_location':image_location})
+    return render(request, 'location.html', {'title':title, 'images':images, 'locations':locations})

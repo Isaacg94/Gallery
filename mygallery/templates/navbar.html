@@ -13,7 +13,18 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="{% url 'gallery' %}" style="font-family: 'Alegreya Sans SC', sans-serif; color: #fff;">home</a>
+                <div class="dropdown" style="font-family: 'Alegreya Sans SC', sans-serif; color: #fff;">
+                        <button class="dropbtn" onclick="myFunction()">Dropdown
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                        </div> 
             </div>
+            
             <div class="nav navbar-nav navbar-right" style="flex-direction: row;">
                 <a href="https://www.facebook.com"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="25" height="25"
