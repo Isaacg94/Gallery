@@ -39,7 +39,7 @@
 <div class="container">
 
     <!-- Looping through images   -->
-    
+
 
     <div class="row">
         <!-- displaying images -->
@@ -56,24 +56,52 @@
             <div class="portfolio-wrap ">
                 <div class="portfolio-wrap hovereffect">
                     <a class="img-overlay" data-toggle="modal" data-target="#{{image.id}}" style="width:100%">
-                        <img src="{{image.img.url}}" href="" class="image" alt="Image" >
+                        <img src="{{image.img.url}}" href="" class="image" alt="Image">
                         <div class="overlay">
+                            <div class="text">View Image</div>
                         </div>
                     </a>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">{{image.img_name}}</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{image.img.url}}" alt="" class="img-fluid">
+                    </div>
+                    <div class="details">
+                        <p>Category: {{image.category}}</p>
+                        <p>Location: {{image.location}}</p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Copy</button>
+                    </div>
                 </div>
             </div>
         </div>
         {% empty %}
     </div>
 
-    
+
     <div class="row">
         <h2 class="text-center">Images Unavailable</h2>
     </div>
     {% endfor %}
 
     <!-- Image details modal -->
-    
+
+
 
 </div>
 

@@ -62,7 +62,30 @@ div.col-xs-6.col-sm-6.col-md-4.col-lg-3 {
   padding: 0px;
   padding-bottom: 10px;
 }
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.col-xs-6.col-sm-6.col-md-4.col-lg-3:hover {
+  opacity: 0.3;
+}
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 .wrap {
   margin-top: 3em;
 }
