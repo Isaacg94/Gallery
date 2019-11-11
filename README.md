@@ -1,6 +1,6 @@
 
 
-<a href="https://fontmeme.com/thrasher-font/"><img src="https://fontmeme.com/permalink/191111/3d3c6bbf6d50adecd854b4d94e94c3bc.png" alt="thrasher-font" border="0"></a>
+<a href="https://fontmeme.com/thrasher-font/"><img src="https://fontmeme.com/permalink/191111/9f4e8f36b769ce1f27f48f7282ee8da4.png" alt="thrasher-font" border="0"></a>
 
 
 
@@ -12,7 +12,7 @@
 
 Moodboard is a photo gallery web application to showcase millenial focused pictures. Users get can view photos uploaded by admin. Users can see photos based on the location, by clicking on the listed locations in the menu. They can also copy the link to a photo to paste at their discretion. They can also search for photos based on the categories.
 
-![alt text](static/images/screenshot1.png)
+![alt text](static/images/screenshot3.png)
 ![alt text](static/images/screenshot2.png)
 
 ## Features
