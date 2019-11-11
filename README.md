@@ -1,12 +1,12 @@
 
 
-<a href="https://fontmeme.com/thrasher-font/"><img src="https://fontmeme.com/permalink/191111/ea4eab99fac8cd9d6d4f3ce811d3da96.png" alt="thrasher-font" border="0"></a>
+<a href="https://fontmeme.com/thrasher-font/"><img src="https://fontmeme.com/permalink/191111/3d3c6bbf6d50adecd854b4d94e94c3bc.png" alt="thrasher-font" border="0"></a>
 
 
 
 
 ### Author
- **[Isaac Gichuru.](https://github.com/Isaacg94)**
+ **[Isaac Gichuru.](https://github.com/Isaacg94) 26/10/2019.**
 
 ## Description
 
