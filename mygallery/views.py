@@ -31,7 +31,7 @@ def singlepost(request,img_id):
         raise Http404()
     return render (request,"singlepost.html", {"singlepost": singlepost}) 
 
-def location_filter(request, image_location):
+def location_filter(request, location):
     locations = Location.objects.all()
     image_location = Location.get_location_id(location)
     images = Image.filter_by_location(location)
