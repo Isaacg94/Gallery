@@ -35,5 +35,5 @@ def singlepost(request,img_id):
 def location_filter(request, location):
     locations = Location.objects.all()
     images = Image.objects.filter(location__id = location)
-    title = f'{image_location} Photos'
+    title = 'Location Photos'
     return render(request, 'location.html', {'title':title, 'images':images, 'locations':locations})
