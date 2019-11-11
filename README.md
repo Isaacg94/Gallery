@@ -17,9 +17,9 @@ Moodboard is a photo gallery web application to showcase millenial focused pictu
 
 ## Features
 * A landing page that allows users to see various images.
-* A display of images based on the location.
+* A display of images based on the location once a location is clicked on.
 * A modal displaying image details once an image is clicked on.
-* Users can also search for images based categories.
+* Users can also search for images based on categories.
 * A navigation bar with a link to navigate back to the landing page.
 * Admin capabilities to upload images through the dashboard.
 
