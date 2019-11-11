@@ -29,6 +29,7 @@ class Location(models.Model):
 
 
 class Image(models.Model):
+    img = models.ImageField(upload_to='gallery/')
     img_name = models.CharField(max_length= 30)
     img_description = models.TextField()
     editor = models.ForeignKey(Editor)
