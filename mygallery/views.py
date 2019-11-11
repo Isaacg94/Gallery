@@ -29,4 +29,11 @@ def singlepost(request,img_id):
         singlepost = Image.objects.get(id = img_id)
     except DoesNotExist:
         raise Http404()
-    return render (request,"singlepost.html", {"singlepost": singlepost})        
+    return render (request,"singlepost.html", {"singlepost": singlepost}) 
+
+def location_filter(request, image_location):
+    locations = Location.objects.all()
+    image_location = Location.get_location_id(location)
+    images = Image.filter_by_location(location)
+    title = f'{image_location} Photos'
+    return render(request, 'location.html', {'title':title, 'images':images, 'locations':locations, 'image_location':image_location})
