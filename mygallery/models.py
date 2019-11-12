@@ -1,4 +1,6 @@
 from django.db import models
+from pyuploadcare.dj.models import ImageField
+
 
 # Create your models here.
 class Editor(models.Model):
@@ -29,7 +31,7 @@ class Location(models.Model):
 
 
 class Image(models.Model):
-    img = models.ImageField(upload_to='gallery/')
+    img = ImageField(blank=True, manual_crop="")
     img_name = models.CharField(max_length= 30)
     img_description = models.TextField()
     editor = models.ForeignKey(Editor)

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'pyuploadcare.dj',
     'mygallery.apps.MygalleryConfig',
     'bootstrap4',
     'django.contrib.admin',
@@ -70,6 +71,11 @@ TEMPLATES = [
         },
     },
 ]
+from decouple import config
+UPLOADCARE = {
+    'pub_key': 'd3567715182b3ca66a5b',
+    'secret': config('SECRET'),
+}
 
 WSGI_APPLICATION = 'gallery.wsgi.application'
 
